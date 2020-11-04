@@ -1,0 +1,39 @@
+@import "variables";
+
+/* Helpers */
+.delete-btn {
+  color: $red;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 15px;
+  font-size: .7rem;
+  transition: transform .2s ease-in-out;
+}
+
+.delete-btn:hover,
+.add-playlist-btn:hover {
+  transform: scale(1.1);
+}
+
+.add-playlist-btn {
+  border: none;
+  color: white;
+  background-color: $primary-color;
+  border-radius: 12px;
+  padding: 6px 0;
+  font-size: 0.8rem;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+.delete-icon {
+  border: none;
+  color: $red;
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+.fa-music {
+  color: $primary-color;
+  font-size: .8rem;
+}

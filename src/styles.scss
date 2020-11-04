@@ -1,117 +1,71 @@
-/* Global styles */
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
-
-button {
-  cursor: pointer;
-}
-
-h1 {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-main {
-  display: flex;
-  height: 96.5vh;
-}
-
-.fa-music {
-  color: #1DB954;
-  font-size: .8rem;
-}
-
-
-
-/* Helpers */
-.delete-btn {
-  color: #b50303;
-  border: none;
-  border-radius: 12px;
-  padding: 5px 15px;
-  font-size: .7rem;
-  transition: transform .2s ease-in-out;
-}
-
-.delete-btn:hover,
-.add-playlist-btn:hover {
-  transform: scale(1.1);
-}
-
-.add-playlist-btn {
-  border: none;
-  color: white;
-  background-color: #1DB954;
-  border-radius: 12px;
-  padding: 6px 0;
-  font-size: 0.8rem;
-  transition: transform 0.2s ease-in-out;
-  width: 100%;
-}
-
-.delete-icon {
-  border: none;
-  color: #b50303;
-  border-radius: 10px;
-  background-color: #cccccc;
-}
+@import "./scss/variables";
+@import "./scss/global.scss";
+@import "./scss/helpers.scss";
 
 
 
 /*  */
 .col-left {
-  width: 15%;
-  padding: 0 1%;
+  flex-basis: 15%;
 }
 
 .search-area {
   border-bottom: 1px solid lightgrey;
-  padding-bottom: 20px;
+  padding: 0 $p-10 20px;
+
+  form {
+    display: flex;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  input {
+    border: none;
+    flex-grow: 1;
+  }
+
+  h1 i {
+    color: $primary-color;
+  }
+
+  h1 span {
+    font-weight: 400;
+    color: #444444;
+    font-size: .8rem;
+  }
+
+  button {
+    height: 30px;
+    width: 30px;
+  }
 }
 
-.search-area h1 i {
-  color: #1DB954;
+
+
+.playlists {
+  padding: 0 $p-10 20px;
+
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid $primary-color;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+    .fa-headphones {
+      flex-basis: 10%;
+    }
+  
+    h2 {
+      flex-basis: 90%;
+    }
+  }
 }
-
-.search-area h1 span {
-  font-weight: 400;
-  color: #444444;
-  font-size: .8rem;
-}
-
-.search-area button {
-  margin-left: -6px;
-}
-
-
-
-.playlists .playlist-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 1px solid #1DB954;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-}
-
-.playlists .playlist-item .fa-headphones {
-  flex-basis: 10%;
-}
-
-.playlists .playlist-item h2 {
-  flex-basis: 90%;
-}
-
 
 
 
 .playlist-content {
+  flex-basis: 15%;
   background-color: #f7f7f7;
   padding: 25px 15px 0;
 }
@@ -136,7 +90,7 @@ main {
 
 
 .search-results {
-  width: 70%;
+  flex-basis: 70%;
   background-color: #0000004a;
   background-image: url(images/spotify-logo.png);
   background-repeat: no-repeat;
