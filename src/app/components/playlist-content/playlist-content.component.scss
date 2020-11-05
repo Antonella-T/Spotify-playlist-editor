@@ -1,0 +1,23 @@
+@import '../../../scss/variables';
+:host {
+  flex-basis: 15%;
+  background-color:#f7f7f7;
+  padding: 25px 15px 0;
+  border-right: 1px solid $light-gray;
+  border-left: 1px solid $light-gray;
+
+  .playlist {
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    padding: 10px 0;
+  }
+
+  .playlist div {
+    flex-grow: 1;
+  }
+
+  p {
+    margin: 0;
+    font-size: .7rem;
+  }
+}

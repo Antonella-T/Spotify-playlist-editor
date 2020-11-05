@@ -2,120 +2,17 @@
 @import "./scss/global.scss";
 @import "./scss/helpers.scss";
 
-
-
-/*  */
-.col-left {
-  flex-basis: 15%;
-}
-
-.search-area {
-  border-bottom: 1px solid lightgrey;
-  padding: 0 $p-10 20px;
-
-  form {
-    display: flex;
-    border-bottom: 1px solid $light-gray;
-  }
-
-  input {
-    border: none;
-    flex-grow: 1;
-  }
-
-  h1 i {
-    color: $primary-color;
-  }
-
-  h1 span {
-    font-weight: 400;
-    color: #444444;
-    font-size: .8rem;
-  }
-
-  button {
-    height: 30px;
-    width: 30px;
-  }
-}
-
-
-
-.playlists {
-  padding: 0 $p-10 20px;
-
-  &-item {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-bottom: 1px solid $primary-color;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-
-    .fa-headphones {
-      flex-basis: 10%;
-    }
-  
-    h2 {
-      flex-basis: 90%;
-    }
-  }
-}
-
-
-
-.playlist-content {
-  flex-basis: 15%;
-  background-color: #f7f7f7;
-  padding: 25px 15px 0;
-}
-
-.playlist-content .playlist {
-  display: flex;
-  border-bottom: 1px solid #dadada;
-  padding-bottom: 10px;
-}
-
-.playlist-content .playlist div {
-  margin-right: 20px;
-}
-
-.playlist-content p {
-  margin: 0;
-  font-size: .7rem;
-}
-
-
-
-
-
-.search-results {
-  flex-basis: 70%;
-  background-color: #0000004a;
-  background-image: url(images/spotify-logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.search-results .cd-bg {
-  background-image: url(images/cd-cover.jpg);
-  width: 200px;
-  height: 200px;
-}
-
-
-
 /* Footer styles */
 footer {
   background-color: #2e2e2e;
   text-align: end;
   padding: 3px 0;
-}
 
-footer a {
-  margin-right: 1%;
-}
+  a {
+    margin-right: 1%;
+  }
 
-footer .fa {
-  color: white;
+  .fa {
+    color: white;
+  }
 }

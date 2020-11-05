@@ -1,0 +1,61 @@
+@import '../../../scss/variables';
+
+:host {
+  flex-basis: 16%;
+}
+
+.search-area {
+  border-bottom: 1px solid $gray;
+  padding: 0 $p-10 20px;
+  margin-bottom: 30px;
+
+  form {
+    display: flex;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  input {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+  }
+
+  h1 i {
+    color: $primary-color;
+  }
+
+  h1 span {
+    font-weight: 400;
+    color: $dark-text;
+    font-size: .8rem;
+  }
+
+  button {
+    height: 30px;
+    width: 30px;
+    outline: none;
+  }
+}
+
+
+
+.playlists {
+  padding: 0 $p-10 20px;
+  background-color: #FDFDFE;
+
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 15px;
+
+    .fa-headphones {
+      flex-basis: 10%;
+    }
+  
+    h2 {
+      flex-basis: 90%;
+    }
+  }
+}

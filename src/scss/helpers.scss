@@ -1,22 +1,12 @@
 @import "variables";
 
 /* Helpers */
-.delete-btn {
-  color: $red;
-  border: none;
-  border-radius: 12px;
-  padding: 5px 15px;
-  font-size: .7rem;
-  transition: transform .2s ease-in-out;
-}
-
-.delete-btn:hover,
-.add-playlist-btn:hover {
+.add-playlist-btn:hover,
+.btn-gray:hover {
   transform: scale(1.1);
 }
 
 .add-playlist-btn {
-  border: none;
   color: white;
   background-color: $primary-color;
   border-radius: 12px;
@@ -24,13 +14,24 @@
   font-size: 0.8rem;
   transition: transform 0.2s ease-in-out;
   width: 100%;
+  outline: none;
+  margin-top: 20px;
 }
 
-.delete-icon {
-  border: none;
+.btn-gray {
   color: $red;
-  border-radius: 10px;
-  background-color: #cccccc;
+  background-color: $gray;
+  outline: none;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 12px;
+  height: 24px;
+  padding: 0 10px;
+  font-size: .7rem;
+}
+
+.btn-square {
+  width: 24px;
+  padding: 0;
 }
 
 .fa-music {
