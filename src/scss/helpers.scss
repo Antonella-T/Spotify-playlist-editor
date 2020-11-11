@@ -23,14 +23,15 @@
   background-color: $gray;
   outline: none;
   transition: transform 0.2s ease-in-out;
-  border-radius: 12px;
-  height: 24px;
+  border-radius: 16px;
+  height: 30px;
   padding: 0 10px;
   font-size: .7rem;
+  margin: 10px 0;
 }
 
 .btn-square {
-  width: 24px;
+  width: 30px;
   padding: 0;
 }
 

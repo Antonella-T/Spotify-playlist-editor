@@ -7,7 +7,6 @@
 .search-area {
   border-bottom: 1px solid $gray;
   padding: 0 $p-10 20px;
-  margin-bottom: 30px;
 
   form {
     display: flex;
@@ -40,22 +39,35 @@
 
 
 .playlists {
-  padding: 0 $p-10 20px;
-  background-color: #FDFDFE;
+  padding: 25px $p-10 20px;
+  background-color: #fbfbfb;
 
   &-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid $primary-color;
-    padding-bottom: 15px;
 
     .fa-headphones {
       flex-basis: 10%;
     }
-  
+
     h2 {
       flex-basis: 90%;
+      margin-bottom: 10px;
+    }
+
+    .playlist-info {
+      margin-bottom: 10px;
+
+      p {
+        font-size: .7rem;
+        line-height: 0.5;
+
+        span {
+          font-weight: 600;
+        }
+      }
     }
   }
 }

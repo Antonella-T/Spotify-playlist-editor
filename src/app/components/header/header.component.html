@@ -17,22 +17,22 @@
 
   <!-- playlists area section start -->
   <section class="playlists">
-    <div class="playlists-item">
-      <i class="fa fa-headphones" aria-hidden="true"></i>
-      <h2>Playlist 1</h2>
-      <button type="button" class="btn-gray">
-        Remove playlist
-        <i class="fa fa-trash-o" aria-hidden="true"></i>
-      </button>
-    </div>
 
-    <div class="playlists-item">
+    <div class="playlists-item" *ngFor="let playlist of playlists?.items">
       <i class="fa fa-headphones" aria-hidden="true"></i>
-      <h2>Playlist 1</h2>
-      <button type="button" class="btn-gray">
-        Remove playlist
-        <i class="fa fa-trash-o" aria-hidden="true"></i>
-      </button>
+
+      <h2>{{ playlist.name }}</h2>
+
+      <div class="playlist-info">
+        <p>Tracks <span>{{ playlist.tracks.total }}</span></p>
+
+        <p>Owner <span>{{ playlist.owner.display_name }}</span></p>
+
+        <button type="button" class="btn-gray">
+          Remove playlist
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
 
     <button type="button" class="add-playlist-btn">New playlist</button>

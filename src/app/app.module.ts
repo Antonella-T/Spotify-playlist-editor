@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PlaylistContentComponent } from './components/playlist-content/playlist-content.component';
 import { PlaylistResultsComponent } from './components/playlist-results/playlist-results.component';
+import { SpotifyService } from './services/spotify.service';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { PlaylistResultsComponent } from './components/playlist-results/playlist
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    SpotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

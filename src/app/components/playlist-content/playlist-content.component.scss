@@ -1,6 +1,6 @@
 @import '../../../scss/variables';
 :host {
-  flex-basis: 15%;
+  flex-basis: 18%;
   background-color:#f7f7f7;
   padding: 25px 15px 0;
   border-right: 1px solid $light-gray;
@@ -17,7 +17,8 @@
   }
 
   p {
-    margin: 0;
-    font-size: .7rem;
+    margin: 0 0 0 15px;
+    font-size: 0.7rem;
+    color: gray;
   }
 }

@@ -1,14 +1,26 @@
 <!-- search-results section start -->
 <section class="search-results">
-  <div class="cd-bg"></div>
+  <div class="cd-bg">
+    <img src="{{ album.images[1].url }}" />
+    <p><strong>{{ album.name }}</strong></p>
+    <p>
+      <a href="" *ngFor="let artist of album.artists">{{ artist.name }}</a>
+      Tracks:
+      {{ album.total_tracks }}
+    </p>
+  </div>
 
-  <div class="playlist-songs">
+  <section>
+    <div class="album-track" *ngFor="let track of album.tracks.items">
       <span>
         <i class="fa fa-music" aria-hidden="true"></i>
-        Song name
+        {{ track.name }}
       </span>
-    <button type="button" class="more-icon">...
-    </button>
-  </div>
+
+      <button type="button" class="btn-gray btn-square">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </button>
+    </div>
+  </section>
 </section>
 <!-- search-results section end -->

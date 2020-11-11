@@ -1,4 +1,20 @@
 :host {
-  flex-basis: 70%;
-  background-color: #0000004a;
+  flex-basis: 67%;
+}
+
+.search-results {
+  max-width: 600px;
+  margin: auto;
+  padding: 3% 0;
+}
+
+.album-track {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.fa-ellipsis-h {
+  color: black;
 }
